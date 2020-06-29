@@ -12,8 +12,8 @@ struct MuscleView: View {
     @Environment(\.managedObjectContext) var moc
     @State private var newExercise = ""
     var fetchRequest: FetchRequest<MuscleGroup>
-    private var muscleGroup: FetchedResults<MuscleGroup>{
-        fetchRequest.wrappedValue
+    private var muscleGroup: MuscleGroup{
+        fetchRequest.wrappedValue.first!
     }
     
     init(filter: String){
@@ -23,38 +23,19 @@ struct MuscleView: View {
     var body: some View {
         VStack{
             List{
-                ForEach(muscleGroup, id: \.self){ mg in
-                    Text(mg.wrappedName)
-//                    ForEach(mg.exerciseArray, id: \.self){ exercise in
-//                        ExerciseView(exercise: exercise)
-//                    }
+                ForEach(muscleGroup.exerciseArray, id: \.self){ exercise in
+                    ExerciseView(exercise: exercise)
                 }
             }
             HStack{
                 TextField("Add an exercise", text: self.$newExercise)
                 Button(action: {
-                    let back = MuscleGroup(context: self.moc)
-                    back.name = "Back"
-                    let chest = MuscleGroup(context: self.moc)
-                    chest.name = "Chest"
-                    let legs = MuscleGroup(context: self.moc)
-                    legs.name = "Legs"
-                    let shoulder = MuscleGroup(context: self.moc)
-                    shoulder.name = "Shoulder"
-                    let bicep = MuscleGroup(context: self.moc)
-                    bicep.name = "Biceps"
-                    let tricep = MuscleGroup(context: self.moc)
-                    tricep.name = "Tricep"
-                    let abs = MuscleGroup(context: self.moc)
-                    abs.name = "Abs"
+                    let e = Exercise(context: self.moc)
+                    e.name = self.newExercise
+                    e.weight = 0
+                    e.reps = 0
+                    e.muscleGroup = self.muscleGroup
                     try? self.moc.save()
-//                    let e = Exercise(context: self.moc)
-//                    e.name = self.newExercise
-//                    e.weight = 0
-//                    e.reps = 0
-//
-//
-//                    try? self.moc.save()
                 }) {
                     Text("Add")
                 }
