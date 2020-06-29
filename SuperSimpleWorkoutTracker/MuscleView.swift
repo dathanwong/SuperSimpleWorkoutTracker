@@ -12,20 +12,22 @@ struct MuscleView: View {
     @Environment(\.managedObjectContext) var moc
     @State private var newExercise = ""
     var fetchRequest: FetchRequest<MuscleGroup>
-    private var muscleGroup: MuscleGroup{
-        fetchRequest.wrappedValue.first!
-    }
+    var filter: String
     
     init(filter: String){
+        self.filter = filter
         fetchRequest = FetchRequest<MuscleGroup>(entity: MuscleGroup.entity(), sortDescriptors: [], predicate: NSPredicate(format: "name == %@", filter))
     }
     
     var body: some View {
         VStack{
             List{
-                ForEach(muscleGroup.exerciseArray, id: \.self){ exercise in
-                    ExerciseView(exercise: exercise)
-                }.onDelete(perform: deleteExercise)
+                ForEach(fetchRequest.wrappedValue, id: \.self){ mg in
+                    ForEach(mg.exerciseArray, id:\.self){ exercise in
+                        ExerciseView(exercise: exercise)
+                    }
+                }
+                //.onDelete(perform: deleteExercise)
             }
             HStack{
                 TextField("Add an exercise", text: self.$newExercise)
@@ -34,7 +36,9 @@ struct MuscleView: View {
                     e.name = self.newExercise
                     e.weight = 0
                     e.reps = 0
-                    e.muscleGroup = self.muscleGroup
+                    let muscleGroup = MuscleGroup(context: self.moc)
+                    muscleGroup.name = self.filter
+                    e.muscleGroup = muscleGroup
                     try? self.moc.save()
                 }) {
                     Text("Add")
@@ -44,13 +48,13 @@ struct MuscleView: View {
         }
     }
     
-    func deleteExercise(at offsets: IndexSet) {
-        for index in offsets{
-            let exercise = muscleGroup.exerciseArray[index]
-            moc.delete(exercise)
-            try? moc.save()
-        }
-    }
+//    func deleteExercise(at offsets: IndexSet) {
+//        for index in offsets{
+//            let exercise = muscleGroup.exerciseArray[index]
+//            moc.delete(exercise)
+//            try? moc.save()
+//        }
+//    }
 }
 
 struct ExerciseView: View{
