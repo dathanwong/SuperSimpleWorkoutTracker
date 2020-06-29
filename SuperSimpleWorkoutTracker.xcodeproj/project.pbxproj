@@ -23,6 +23,9 @@
 		EE92FD6624A4F9570010AC91 /* MuscleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE92FD6524A4F9570010AC91 /* MuscleView.swift */; };
 		EE9806FC24A96D6D00C76967 /* UITabBarWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9806FB24A96D6D00C76967 /* UITabBarWrapper.swift */; };
 		EE9806FE24A96DE900C76967 /* TabBarElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9806FD24A96DE900C76967 /* TabBarElement.swift */; };
+		EE98070024AA577300C76967 /* KeyboardHeightPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9806FF24AA577300C76967 /* KeyboardHeightPublisher.swift */; };
+		EE98070224AA579900C76967 /* KeyboardAdaptive.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE98070124AA579900C76967 /* KeyboardAdaptive.swift */; };
+		EE98070424AA57C200C76967 /* UIResponder+Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE98070324AA57C200C76967 /* UIResponder+Current.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		EE92FD6524A4F9570010AC91 /* MuscleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleView.swift; sourceTree = "<group>"; };
 		EE9806FB24A96D6D00C76967 /* UITabBarWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarWrapper.swift; sourceTree = "<group>"; };
 		EE9806FD24A96DE900C76967 /* TabBarElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarElement.swift; sourceTree = "<group>"; };
+		EE9806FF24AA577300C76967 /* KeyboardHeightPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHeightPublisher.swift; sourceTree = "<group>"; };
+		EE98070124AA579900C76967 /* KeyboardAdaptive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAdaptive.swift; sourceTree = "<group>"; };
+		EE98070324AA57C200C76967 /* UIResponder+Current.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+Current.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,9 @@
 				EE92FD6524A4F9570010AC91 /* MuscleView.swift */,
 				EE9806FB24A96D6D00C76967 /* UITabBarWrapper.swift */,
 				EE9806FD24A96DE900C76967 /* TabBarElement.swift */,
+				EE9806FF24AA577300C76967 /* KeyboardHeightPublisher.swift */,
+				EE98070124AA579900C76967 /* KeyboardAdaptive.swift */,
+				EE98070324AA57C200C76967 /* UIResponder+Current.swift */,
 			);
 			path = SuperSimpleWorkoutTracker;
 			sourceTree = "<group>";
@@ -295,8 +304,11 @@
 				EE92FD6624A4F9570010AC91 /* MuscleView.swift in Sources */,
 				EE9806FE24A96DE900C76967 /* TabBarElement.swift in Sources */,
 				EE92FD3824A4F6B90010AC91 /* SuperSimpleWorkoutTracker.xcdatamodeld in Sources */,
+				EE98070024AA577300C76967 /* KeyboardHeightPublisher.swift in Sources */,
 				EE92FD3A24A4F6B90010AC91 /* ContentView.swift in Sources */,
+				EE98070424AA57C200C76967 /* UIResponder+Current.swift in Sources */,
 				EE5E963724A5895D001B8DFC /* MuscleGroup+CoreDataProperties.swift in Sources */,
+				EE98070224AA579900C76967 /* KeyboardAdaptive.swift in Sources */,
 				EE9806FC24A96D6D00C76967 /* UITabBarWrapper.swift in Sources */,
 				EE5E963624A5895D001B8DFC /* MuscleGroup+CoreDataClass.swift in Sources */,
 				EE5E963524A5895D001B8DFC /* Exercise+CoreDataProperties.swift in Sources */,

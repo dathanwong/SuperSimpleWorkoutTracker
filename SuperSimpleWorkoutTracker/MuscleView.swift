@@ -25,9 +25,9 @@ struct MuscleView: View {
                 ForEach(fetchRequest.wrappedValue, id: \.self){ mg in
                     ForEach(mg.exerciseArray, id:\.self){ exercise in
                         ExerciseView(exercise: exercise)
-                    }
+                    }.onDelete(perform: self.deleteExercise)
                 }
-                //.onDelete(perform: deleteExercise)
+                
             }
             HStack{
                 TextField("Add an exercise", text: self.$newExercise)
@@ -40,21 +40,31 @@ struct MuscleView: View {
                     muscleGroup.name = self.filter
                     e.muscleGroup = muscleGroup
                     try? self.moc.save()
+                    self.newExercise = ""
+                    UIApplication.shared.endEditing()
                 }) {
                     Text("Add")
                 }
             }.padding()
             
-        }
+        }.keyboardAdaptive()
     }
     
-//    func deleteExercise(at offsets: IndexSet) {
-//        for index in offsets{
-//            let exercise = muscleGroup.exerciseArray[index]
-//            moc.delete(exercise)
-//            try? moc.save()
-//        }
-//    }
+    func deleteExercise(at offsets: IndexSet) {
+        for index in offsets{
+            let exercise = fetchRequest.wrappedValue.first(where: {
+                $0.name == self.filter
+            })!.exerciseArray[index]
+            moc.delete(exercise)
+            try? moc.save()
+        }
+    }
+}
+
+extension UIApplication {
+    func endEditing() {
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
 }
 
 struct ExerciseView: View{
