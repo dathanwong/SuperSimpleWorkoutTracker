@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE5E963424A5895D001B8DFC /* Exercise+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5E963024A5895D001B8DFC /* Exercise+CoreDataClass.swift */; };
+		EE5E963524A5895D001B8DFC /* Exercise+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5E963124A5895D001B8DFC /* Exercise+CoreDataProperties.swift */; };
+		EE5E963624A5895D001B8DFC /* MuscleGroup+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5E963224A5895D001B8DFC /* MuscleGroup+CoreDataClass.swift */; };
+		EE5E963724A5895D001B8DFC /* MuscleGroup+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5E963324A5895D001B8DFC /* MuscleGroup+CoreDataProperties.swift */; };
+		EE92FD3324A4F6B90010AC91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE92FD3224A4F6B90010AC91 /* AppDelegate.swift */; };
+		EE92FD3524A4F6B90010AC91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE92FD3424A4F6B90010AC91 /* SceneDelegate.swift */; };
+		EE92FD3824A4F6B90010AC91 /* SuperSimpleWorkoutTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE92FD3624A4F6B90010AC91 /* SuperSimpleWorkoutTracker.xcdatamodeld */; };
+		EE92FD3A24A4F6B90010AC91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE92FD3924A4F6B90010AC91 /* ContentView.swift */; };
+		EE92FD3C24A4F6BD0010AC91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE92FD3B24A4F6BD0010AC91 /* Assets.xcassets */; };
+		EE92FD3F24A4F6BD0010AC91 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE92FD3E24A4F6BD0010AC91 /* Preview Assets.xcassets */; };
+		EE92FD4224A4F6BD0010AC91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE92FD4024A4F6BD0010AC91 /* LaunchScreen.storyboard */; };
+		EE92FD4D24A4F6BD0010AC91 /* SuperSimpleWorkoutTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE92FD4C24A4F6BD0010AC91 /* SuperSimpleWorkoutTrackerTests.swift */; };
+		EE92FD5824A4F6BD0010AC91 /* SuperSimpleWorkoutTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE92FD5724A4F6BD0010AC91 /* SuperSimpleWorkoutTrackerUITests.swift */; };
+		EE92FD6624A4F9570010AC91 /* MuscleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE92FD6524A4F9570010AC91 /* MuscleView.swift */; };
+		EE9806FC24A96D6D00C76967 /* UITabBarWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9806FB24A96D6D00C76967 /* UITabBarWrapper.swift */; };
+		EE9806FE24A96DE900C76967 /* TabBarElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9806FD24A96DE900C76967 /* TabBarElement.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE92FD4924A4F6BD0010AC91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE92FD2724A4F6B90010AC91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE92FD2E24A4F6B90010AC91;
+			remoteInfo = SuperSimpleWorkoutTracker;
+		};
+		EE92FD5424A4F6BD0010AC91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE92FD2724A4F6B90010AC91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE92FD2E24A4F6B90010AC91;
+			remoteInfo = SuperSimpleWorkoutTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE5E963024A5895D001B8DFC /* Exercise+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercise+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EE5E963124A5895D001B8DFC /* Exercise+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercise+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EE5E963224A5895D001B8DFC /* MuscleGroup+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MuscleGroup+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EE5E963324A5895D001B8DFC /* MuscleGroup+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MuscleGroup+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EE92FD2F24A4F6B90010AC91 /* SuperSimpleWorkoutTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperSimpleWorkoutTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE92FD3224A4F6B90010AC91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE92FD3424A4F6B90010AC91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EE92FD3724A4F6B90010AC91 /* SuperSimpleWorkoutTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SuperSimpleWorkoutTracker.xcdatamodel; sourceTree = "<group>"; };
+		EE92FD3924A4F6B90010AC91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EE92FD3B24A4F6BD0010AC91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE92FD3E24A4F6BD0010AC91 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE92FD4124A4F6BD0010AC91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE92FD4324A4F6BD0010AC91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE92FD4824A4F6BD0010AC91 /* SuperSimpleWorkoutTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperSimpleWorkoutTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE92FD4C24A4F6BD0010AC91 /* SuperSimpleWorkoutTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperSimpleWorkoutTrackerTests.swift; sourceTree = "<group>"; };
+		EE92FD4E24A4F6BD0010AC91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE92FD5324A4F6BD0010AC91 /* SuperSimpleWorkoutTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperSimpleWorkoutTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE92FD5724A4F6BD0010AC91 /* SuperSimpleWorkoutTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperSimpleWorkoutTrackerUITests.swift; sourceTree = "<group>"; };
+		EE92FD5924A4F6BD0010AC91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE92FD6524A4F9570010AC91 /* MuscleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleView.swift; sourceTree = "<group>"; };
+		EE9806FB24A96D6D00C76967 /* UITabBarWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarWrapper.swift; sourceTree = "<group>"; };
+		EE9806FD24A96DE900C76967 /* TabBarElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarElement.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE92FD2C24A4F6B90010AC91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE92FD4524A4F6BD0010AC91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE92FD5024A4F6BD0010AC91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE92FD2624A4F6B90010AC91 = {
+			isa = PBXGroup;
+			children = (
+				EE5E963024A5895D001B8DFC /* Exercise+CoreDataClass.swift */,
+				EE5E963124A5895D001B8DFC /* Exercise+CoreDataProperties.swift */,
+				EE5E963224A5895D001B8DFC /* MuscleGroup+CoreDataClass.swift */,
+				EE5E963324A5895D001B8DFC /* MuscleGroup+CoreDataProperties.swift */,
+				EE92FD3124A4F6B90010AC91 /* SuperSimpleWorkoutTracker */,
+				EE92FD4B24A4F6BD0010AC91 /* SuperSimpleWorkoutTrackerTests */,
+				EE92FD5624A4F6BD0010AC91 /* SuperSimpleWorkoutTrackerUITests */,
+				EE92FD3024A4F6B90010AC91 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE92FD3024A4F6B90010AC91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE92FD2F24A4F6B90010AC91 /* SuperSimpleWorkoutTracker.app */,
+				EE92FD4824A4F6BD0010AC91 /* SuperSimpleWorkoutTrackerTests.xctest */,
+				EE92FD5324A4F6BD0010AC91 /* SuperSimpleWorkoutTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE92FD3124A4F6B90010AC91 /* SuperSimpleWorkoutTracker */ = {
+			isa = PBXGroup;
+			children = (
+				EE92FD3224A4F6B90010AC91 /* AppDelegate.swift */,
+				EE92FD3424A4F6B90010AC91 /* SceneDelegate.swift */,
+				EE92FD3924A4F6B90010AC91 /* ContentView.swift */,
+				EE92FD3B24A4F6BD0010AC91 /* Assets.xcassets */,
+				EE92FD4024A4F6BD0010AC91 /* LaunchScreen.storyboard */,
+				EE92FD4324A4F6BD0010AC91 /* Info.plist */,
+				EE92FD3624A4F6B90010AC91 /* SuperSimpleWorkoutTracker.xcdatamodeld */,
+				EE92FD3D24A4F6BD0010AC91 /* Preview Content */,
+				EE92FD6524A4F9570010AC91 /* MuscleView.swift */,
+				EE9806FB24A96D6D00C76967 /* UITabBarWrapper.swift */,
+				EE9806FD24A96DE900C76967 /* TabBarElement.swift */,
+			);
+			path = SuperSimpleWorkoutTracker;
+			sourceTree = "<group>";
+		};
+		EE92FD3D24A4F6BD0010AC91 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EE92FD3E24A4F6BD0010AC91 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE92FD4B24A4F6BD0010AC91 /* SuperSimpleWorkoutTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE92FD4C24A4F6BD0010AC91 /* SuperSimpleWorkoutTrackerTests.swift */,
+				EE92FD4E24A4F6BD0010AC91 /* Info.plist */,
+			);
+			path = SuperSimpleWorkoutTrackerTests;
+			sourceTree = "<group>";
+		};
+		EE92FD5624A4F6BD0010AC91 /* SuperSimpleWorkoutTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE92FD5724A4F6BD0010AC91 /* SuperSimpleWorkoutTrackerUITests.swift */,
+				EE92FD5924A4F6BD0010AC91 /* Info.plist */,
+			);
+			path = SuperSimpleWorkoutTrackerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE92FD2E24A4F6B90010AC91 /* SuperSimpleWorkoutTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE92FD5C24A4F6BD0010AC91 /* Build configuration list for PBXNativeTarget "SuperSimpleWorkoutTracker" */;
+			buildPhases = (
+				EE92FD2B24A4F6B90010AC91 /* Sources */,
+				EE92FD2C24A4F6B90010AC91 /* Frameworks */,
+				EE92FD2D24A4F6B90010AC91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SuperSimpleWorkoutTracker;
+			productName = SuperSimpleWorkoutTracker;
+			productReference = EE92FD2F24A4F6B90010AC91 /* SuperSimpleWorkoutTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE92FD4724A4F6BD0010AC91 /* SuperSimpleWorkoutTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE92FD5F24A4F6BD0010AC91 /* Build configuration list for PBXNativeTarget "SuperSimpleWorkoutTrackerTests" */;
+			buildPhases = (
+				EE92FD4424A4F6BD0010AC91 /* Sources */,
+				EE92FD4524A4F6BD0010AC91 /* Frameworks */,
+				EE92FD4624A4F6BD0010AC91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE92FD4A24A4F6BD0010AC91 /* PBXTargetDependency */,
+			);
+			name = SuperSimpleWorkoutTrackerTests;
+			productName = SuperSimpleWorkoutTrackerTests;
+			productReference = EE92FD4824A4F6BD0010AC91 /* SuperSimpleWorkoutTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE92FD5224A4F6BD0010AC91 /* SuperSimpleWorkoutTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE92FD6224A4F6BD0010AC91 /* Build configuration list for PBXNativeTarget "SuperSimpleWorkoutTrackerUITests" */;
+			buildPhases = (
+				EE92FD4F24A4F6BD0010AC91 /* Sources */,
+				EE92FD5024A4F6BD0010AC91 /* Frameworks */,
+				EE92FD5124A4F6BD0010AC91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE92FD5524A4F6BD0010AC91 /* PBXTargetDependency */,
+			);
+			name = SuperSimpleWorkoutTrackerUITests;
+			productName = SuperSimpleWorkoutTrackerUITests;
+			productReference = EE92FD5324A4F6BD0010AC91 /* SuperSimpleWorkoutTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE92FD2724A4F6B90010AC91 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Dathan Wong";
+				TargetAttributes = {
+					EE92FD2E24A4F6B90010AC91 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					EE92FD4724A4F6BD0010AC91 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = EE92FD2E24A4F6B90010AC91;
+					};
+					EE92FD5224A4F6BD0010AC91 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = EE92FD2E24A4F6B90010AC91;
+					};
+				};
+			};
+			buildConfigurationList = EE92FD2A24A4F6B90010AC91 /* Build configuration list for PBXProject "SuperSimpleWorkoutTracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE92FD2624A4F6B90010AC91;
+			productRefGroup = EE92FD3024A4F6B90010AC91 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE92FD2E24A4F6B90010AC91 /* SuperSimpleWorkoutTracker */,
+				EE92FD4724A4F6BD0010AC91 /* SuperSimpleWorkoutTrackerTests */,
+				EE92FD5224A4F6BD0010AC91 /* SuperSimpleWorkoutTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE92FD2D24A4F6B90010AC91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE92FD4224A4F6BD0010AC91 /* LaunchScreen.storyboard in Resources */,
+				EE92FD3F24A4F6BD0010AC91 /* Preview Assets.xcassets in Resources */,
+				EE92FD3C24A4F6BD0010AC91 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE92FD4624A4F6BD0010AC91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE92FD5124A4F6BD0010AC91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE92FD2B24A4F6B90010AC91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE92FD3324A4F6B90010AC91 /* AppDelegate.swift in Sources */,
+				EE92FD6624A4F9570010AC91 /* MuscleView.swift in Sources */,
+				EE9806FE24A96DE900C76967 /* TabBarElement.swift in Sources */,
+				EE92FD3824A4F6B90010AC91 /* SuperSimpleWorkoutTracker.xcdatamodeld in Sources */,
+				EE92FD3A24A4F6B90010AC91 /* ContentView.swift in Sources */,
+				EE5E963724A5895D001B8DFC /* MuscleGroup+CoreDataProperties.swift in Sources */,
+				EE9806FC24A96D6D00C76967 /* UITabBarWrapper.swift in Sources */,
+				EE5E963624A5895D001B8DFC /* MuscleGroup+CoreDataClass.swift in Sources */,
+				EE5E963524A5895D001B8DFC /* Exercise+CoreDataProperties.swift in Sources */,
+				EE92FD3524A4F6B90010AC91 /* SceneDelegate.swift in Sources */,
+				EE5E963424A5895D001B8DFC /* Exercise+CoreDataClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE92FD4424A4F6BD0010AC91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE92FD4D24A4F6BD0010AC91 /* SuperSimpleWorkoutTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE92FD4F24A4F6BD0010AC91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE92FD5824A4F6BD0010AC91 /* SuperSimpleWorkoutTrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE92FD4A24A4F6BD0010AC91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE92FD2E24A4F6B90010AC91 /* SuperSimpleWorkoutTracker */;
+			targetProxy = EE92FD4924A4F6BD0010AC91 /* PBXContainerItemProxy */;
+		};
+		EE92FD5524A4F6BD0010AC91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE92FD2E24A4F6B90010AC91 /* SuperSimpleWorkoutTracker */;
+			targetProxy = EE92FD5424A4F6BD0010AC91 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE92FD4024A4F6BD0010AC91 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE92FD4124A4F6BD0010AC91 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE92FD5A24A4F6BD0010AC91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE92FD5B24A4F6BD0010AC91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE92FD5D24A4F6BD0010AC91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SuperSimpleWorkoutTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = G25YKW6NR4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SuperSimpleWorkoutTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dathanwong.SuperSimpleWorkoutTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE92FD5E24A4F6BD0010AC91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SuperSimpleWorkoutTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = G25YKW6NR4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SuperSimpleWorkoutTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dathanwong.SuperSimpleWorkoutTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EE92FD6024A4F6BD0010AC91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G25YKW6NR4;
+				INFOPLIST_FILE = SuperSimpleWorkoutTrackerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dathanwong.SuperSimpleWorkoutTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperSimpleWorkoutTracker.app/SuperSimpleWorkoutTracker";
+			};
+			name = Debug;
+		};
+		EE92FD6124A4F6BD0010AC91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G25YKW6NR4;
+				INFOPLIST_FILE = SuperSimpleWorkoutTrackerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dathanwong.SuperSimpleWorkoutTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperSimpleWorkoutTracker.app/SuperSimpleWorkoutTracker";
+			};
+			name = Release;
+		};
+		EE92FD6324A4F6BD0010AC91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G25YKW6NR4;
+				INFOPLIST_FILE = SuperSimpleWorkoutTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dathanwong.SuperSimpleWorkoutTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SuperSimpleWorkoutTracker;
+			};
+			name = Debug;
+		};
+		EE92FD6424A4F6BD0010AC91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G25YKW6NR4;
+				INFOPLIST_FILE = SuperSimpleWorkoutTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dathanwong.SuperSimpleWorkoutTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SuperSimpleWorkoutTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE92FD2A24A4F6B90010AC91 /* Build configuration list for PBXProject "SuperSimpleWorkoutTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE92FD5A24A4F6BD0010AC91 /* Debug */,
+				EE92FD5B24A4F6BD0010AC91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE92FD5C24A4F6BD0010AC91 /* Build configuration list for PBXNativeTarget "SuperSimpleWorkoutTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE92FD5D24A4F6BD0010AC91 /* Debug */,
+				EE92FD5E24A4F6BD0010AC91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE92FD5F24A4F6BD0010AC91 /* Build configuration list for PBXNativeTarget "SuperSimpleWorkoutTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE92FD6024A4F6BD0010AC91 /* Debug */,
+				EE92FD6124A4F6BD0010AC91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE92FD6224A4F6BD0010AC91 /* Build configuration list for PBXNativeTarget "SuperSimpleWorkoutTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE92FD6324A4F6BD0010AC91 /* Debug */,
+				EE92FD6424A4F6BD0010AC91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EE92FD3624A4F6B90010AC91 /* SuperSimpleWorkoutTracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EE92FD3724A4F6B90010AC91 /* SuperSimpleWorkoutTracker.xcdatamodel */,
+			);
+			currentVersion = EE92FD3724A4F6B90010AC91 /* SuperSimpleWorkoutTracker.xcdatamodel */;
+			path = SuperSimpleWorkoutTracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EE92FD2724A4F6B90010AC91 /* Project object */;
+}
