@@ -25,7 +25,7 @@ struct MuscleView: View {
             List{
                 ForEach(muscleGroup.exerciseArray, id: \.self){ exercise in
                     ExerciseView(exercise: exercise)
-                }
+                }.onDelete(perform: deleteExercise)
             }
             HStack{
                 TextField("Add an exercise", text: self.$newExercise)
@@ -41,6 +41,14 @@ struct MuscleView: View {
                 }
             }.padding()
             
+        }
+    }
+    
+    func deleteExercise(at offsets: IndexSet) {
+        for index in offsets{
+            let exercise = muscleGroup.exerciseArray[index]
+            moc.delete(exercise)
+            try? moc.save()
         }
     }
 }
